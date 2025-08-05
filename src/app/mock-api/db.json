@@ -1,0 +1,52 @@
+{
+  "livros": [
+    {
+      "id": "1",
+      "titulo": "Tudo é rio",
+      "isbn": "000-0000000001",
+      "preco": 59.9,
+      "dataPublicacao": "2025-06-01",
+      "autorId": 1
+    },
+    {
+      "id": "2",
+      "titulo": "Torto Arado",
+      "isbn": "978-1984821740",
+      "preco": 69.9,
+      "dataPublicacao": "2019-08-15",
+      "autorId": 2
+    },
+    {
+      "id": "3",
+      "titulo": "Out of Earth",
+      "isbn": "978-1916136645",
+      "preco": 79,
+      "dataPublicacao": "2025-01-14",
+      "autorId": 3
+    },
+    {
+      "id": "4",
+      "titulo": "Uma delicada coleção de ausências",
+      "isbn": "000-0000000004",
+      "preco": 54.5,
+      "dataPublicacao": "2025-01-01",
+      "autorId": 4
+    },
+    {
+      "titulo": "O peso do pássaro morto",
+      "isbn": "978-8556510168",
+      "preco": 64,
+      "dataPublicacao": "2017-09-14",
+      "autorId": 4,
+      "id": "5"
+    },
+    {
+      "titulo": "Teste 1",
+      "isbn": "123",
+      "preco": 11,
+      "dataPublicacao": "2025-08-01T03:00:00.000Z",
+      "autorId": 3318883593,
+      "id": "9193"
+    }
+  ]
+}

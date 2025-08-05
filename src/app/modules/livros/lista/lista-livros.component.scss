@@ -1,0 +1,42 @@
+:host {
+  .livro-listagem-container {
+    padding: 24px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .livro-card {
+      justify-content: center;
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .livro-img {
+          width: 150px;
+          height: auto;
+        }
+
+        .card-actions {
+          display: flex;
+          gap: 4px;
+        }
+      }
+
+      mat-card-content {
+        margin-top: 16px;
+      }
+    }
+  }
+}

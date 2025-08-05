@@ -1,0 +1,19 @@
+:host {
+  .formulario-container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+}

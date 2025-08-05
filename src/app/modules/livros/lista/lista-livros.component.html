@@ -1,0 +1,39 @@
+<div class="livro-listagem-container">
+  <div class="header">
+    <h1>Lista de Livros</h1>
+    <a mat-raised-button color="primary" [routerLink]="['/novo-livro']">
+      <mat-icon>add</mat-icon> Novo Livro
+    </a>
+  </div>
+
+  <div class="card-grid">
+    @for (livro of livros(); track $index) {
+    <mat-card class="livro-card">
+      <div class="card-header">
+        <img src="assets/livro.webp" alt="Livro" class="livro-img" />
+        <div class="card-actions">
+          <a
+            mat-icon-button
+            color="primary"
+            [routerLink]="['atualizar-livro', livro.id]"
+          >
+            <mat-icon>edit</mat-icon>
+          </a>
+          <button mat-icon-button (click)="deletarLivro(livro.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+      <mat-card-content>
+        <h2>{{ livro.titulo }}</h2>
+        <p><strong>ISBN:</strong> {{ livro.isbn }}</p>
+        <p><strong>Preço:</strong> {{ livro.preco | currency : "BRL" }}</p>
+        <p>
+          <strong>Data de Publicação:</strong>
+          {{ livro.dataPublicacao | date : "dd/MM/yyyy" }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+    }
+  </div>
+</div>
